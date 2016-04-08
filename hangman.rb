@@ -172,8 +172,7 @@ module Hangman
 		def initialize
 			@game_word = SecretWord.new
 			@board = Board.new(game_word)
-			@engine = GameEngine.new(game_word, board)
-			puts @game_word
+			@engine = GameEngine.new(game_word, board)	
 			active_game
 		end
 
